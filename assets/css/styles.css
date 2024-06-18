@@ -1,0 +1,58 @@
+/*Estilos da pagina index.html*/
+
+.menu li {
+list-style: none;
+display: inline;
+padding: 20px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    color: gray;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+}   
+
+.organization {
+    display: inline;
+    flex-wrap: wrap;
+    margin-left: 250px;
+    margin-block-end: 70px;
+}

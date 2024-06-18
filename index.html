@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <nav>
-    <ul>
+    <ul class="menu">
         <li>
         <a href="index.html" >Home</a>
         </li>
@@ -21,24 +22,26 @@
     </ul>
     </nav>
     <main>
-    <section>
-    <article>
+   <div class="title">
     <H1>Sobre a Giovana</H1>
+   </div>
+    
+    <section class="sobre">
     <p>
         Olá! Me chamo Giovana Rodrigues e tenho 25 anos. Estou em transição de carreira, da aréa da saúde para a tecnologia.
         Formada no bootcamp da Generation Brasil em Java FullStack e aprendi tecnologias como Git, a linguagem de programação Java, SQL como banco de dados relacional, Spring e algumas tecnologias de front-end, como TypeScript e React.
-    </p>
-
-    <p>
+   <br><br>
         Hello! My name is Giovana Rodrigues and I am 25 years old. I am transitioning my career from the healthcare field to technology. I graduated from the Generation Brazil bootcamp in Java FullStack and learned technologies such as Git, the Java programming language, SQL as a relational database, Spring, and some front-end technologies like TypeScript and React.
     </p>
-    <img width="250" 
+    
+    <img class= "br-50 p-30" width="250" 
     height="250" src="https://avatars.githubusercontent.com/u/166066449?s=96&v=4" alt="minha foto">
-    </article>
+    </section>
+    
 
-    <article>
-    <h2>Meu vídeo preferido:</h2>
-
+    
+    <h2 class="title">Meu vídeo preferido:</h2>
+    <article class="sobre">
     <iframe 
     width="560" 
     height="315" 
@@ -50,9 +53,8 @@
     allowfullscreen
     ></iframe>
     </article>
-    </section>
     </main>
-    <footer class="footer">
+    <footer class="title">
         <p>
         Giovana Rodrigues 2024.
         </p>
