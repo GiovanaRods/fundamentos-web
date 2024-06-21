@@ -6,59 +6,62 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Contato</title>
 </head>
-<body>
-    <nav>
-    <ul class="menu">
-        <li>
-        <a href="index.html" >Home</a>
-        </li>
-        <li>
-        <a href="contato.html" >Contato</a>
-        </li>
-        <li>
-        <a href="conquistas.html">Conquistas
-        </a>
-        </li>
-    </ul>
-    </nav>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html" >Home</a>
+                </li>
+                <li>
+                    <a href="contato.html" >Contato</a>
+                </li>
+            </ul>
+        </nav>
 
-    <main>
-    <h1>Entre em contato comigo:</h1>
-    <section class="container">
-    <article>
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-    </form>
-
-    <form>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email">
-    </form>
-
-    <form>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="6"></textarea>
+<main>
+    <header>
+        <h1 style= "align-items: flex-start;">Entre em contato comigo:</h1> 
+    </header>
     
-    <button class="button">Enviar</button>
-    </form>
-    </article>
+    <section class="formulario">
+        <article>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" onkeyup="validaNome()" style="border-color: violet">
+                <div id="txtNome"></div>
+            </form>
+            <br>
+            <form>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" onkeyup="validaEmail()" style="border-color: violet">
+                <div id="txtEmail"></div>
+            </form>
+            <br>
+            <form>
+                <label for="assunto">Assunto:</label><br>
+                <textarea name="assunto" id="assunto" onkeyup="validaAssunto()" cols="60" rows="6" style="border-color: violet"></textarea>
+                <div id="txtAssunto"></div>
 
-    <article class="organization">
-    <address>
-    <h2>Endereço:</h2>
+                <button class="button" onclick="enviarForm()">Enviar</button>
+            </form>
+        </article>
 
-    <p>Terminal Sapopemba, São Paulo - SP</p>
-    </address>
+        <article class="mapa">
+            <address>
+                <h2>Endereço:</h2>
+                <p>Terminal Sapopemba, São Paulo - SP</p>
+            </address>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.728744343917!2d-46.50090869999992!3d-23.614059299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67e19a901ccf%3A0x8bfb99b2176b77b7!2sTerm.%20Sapopemba!5e0!3m2!1spt-BR!2sbr!4v1718415747580!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </article>
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.728744343917!2d-46.50090869999992!3d-23.614059299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67e19a901ccf%3A0x8bfb99b2176b77b7!2sTerm.%20Sapopemba!5e0!3m2!1spt-BR!2sbr!4v1718415747580!5m2!1spt-BR!2sbr" width="400" height="250" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            onmouseover="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+        </article>
     </section>
-    </main>
-    <footer class="title">
-        <p>
-        Giovana Rodrigues 2024.
-        </p>
-    </footer>
-</body>
+</main>
+    <script src="./assets/js/script.js"></script>
+        <footer>
+            <p>
+                Giovana Rodrigues 2024.
+            </p>
+        </footer>
+    </body>
 </html>
